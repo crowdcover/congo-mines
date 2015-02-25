@@ -227,7 +227,6 @@ th {
 }
 
 .content .inline {
-	display: inline;
 	padding-right: 10px;
 }
 
@@ -242,6 +241,14 @@ th {
 
 .content h2, .content h3 {
 	color: #32acde;	
+	margin-top: 0px;
+}
+
+
+.content h4 {
+	color: #a4a4a4;
+	font-size: 1.1em;
+	margin-bottom: 0px;
 }
 
 .content .map {
@@ -284,9 +291,10 @@ th {
 	line-height: 1.7em;
 }
 
-.content article h4 {
-	color: #a4a4a4;
-	font-size: 1.1em
+.content ul, .grey ul {
+	list-style-type: none;
+	margin: 0;
+	line-height: 2em;
 }
 
 .content .category {
