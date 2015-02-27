@@ -4,7 +4,7 @@ description: > # CongoMines is an online document library of materials
                relating to the mining sector in the Democratic Republic of the Congo.
                The project is dedicated to increasing transparency and
                extractive industry govenance.  It is maintained by the Carter Center.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "crowdcover.github.io/congo-mines" # the subpath of your site, e.g. /blog/
 url: "http://congomines.org" # the base hostname & protocol for your site
 twitter_username: CongoMines
 github_username:  CrowdCover
