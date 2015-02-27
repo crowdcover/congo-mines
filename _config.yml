@@ -1,14 +1,13 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: CongoMines
+email: coordo@congomines.org
+description: > # CongoMines is an online document library of materials
+               relating to the mining sector in the Democratic Republic of the Congo.
+               The project is dedicated to increasing transparency and
+               extractive industry govenance.  It is maintained by the Carter Center.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://congomines.org" # the base hostname & protocol for your site
+twitter_username: CongoMines
+github_username:  CrowdCover
 
 # Build settings
 markdown: kramdown
