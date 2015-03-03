@@ -34,8 +34,25 @@ layout: main
       <h2 class="ftr">Recommended Documents</h2>
     </div>
   </div>
+
   <div class="row">
-    <div class="large-6 columns">
+    {% include articles.html columns=2 %}
+  </div>
+
+  <div class="divider"></div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2 class="ftr">All Documents</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    {% include articles.html columns=4 %}
+  </div>
+  <div class="row">
+    {% include articles.html columns=4 %}
+  </div>
+<!--     <div class="large-6 columns">
       <article class="divborder">
         <h4>Author Name</h4>
         <h3 class="inline">Document Title</h3>
@@ -128,9 +145,9 @@ layout: main
         <a href="/document/"><button>Read More</button></a>
       </article>
     </div>
-  </div>
+  </div>-->
 
-  </div>
+</div>
 
 </div>
 </div>

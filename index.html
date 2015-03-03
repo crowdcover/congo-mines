@@ -6,30 +6,12 @@ layout: main
 
   <div class="row">
     <div class="large-12 columns">
-      <h1>Documents</h1>
+      <h1>Featured Documents</h1>
     </div>
   </div>
   <div class="divider"></div>
   <div class="row">
-    <div class="large-6 columns">
-      <article class="divborder">
-        <h4>Author Name</h4>
-        <h3 class="inline">Document Title</h3>
-        <p>Fusce ante lectus, pulvinar sed lacus scelerisque, bibendum commodo mauris. Vivamus erat velit, so  lacus scelerisque, bibendum commodo mauris.</p>
-        <p class="meta">Date: <a>Jan 24, 2015</a> - Theme: <a>Lorem Ipsum</a> - Type: <a>Lorem Ipsum</a> - Source: <a>Lorem Ipsum</a> - Company: <a>Document Ipsum</a></p>
-        <a href="/document/"><button>Read More</button></a>
-      </article>
-    </div>
-    <div class="large-6 columns">
-      <article>
-        <h4>Author Name</h4>
-        <h3 class="inline">Document Title</h3>
-        <p>Fusce ante lectus, pulvinar sed lacus scelerisque, bibendum commodo mauris. Vivamus erat velit, so  lacus scelerisque, bibendum commodo mauris.</p>
-        <p class="meta">Date: <a>Jan 24, 2015</a> - Theme: <a>Lorem Ipsum</a> - Type: <a>Lorem Ipsum</a> - Source: <a>Lorem Ipsum</a> - Company: <a>Document Ipsum</a></p>
-        <a href="/document/"><button>Read More</button></a>
-      </article>
-
-    </div>
+    {% include articles.html columns=2 %}
   </div>
 
 </div>
