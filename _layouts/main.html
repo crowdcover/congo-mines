@@ -53,6 +53,29 @@
   <script src="{{site.baseurl}}/js/foundation.min.js"></script>
   <script>
     $(document).foundation();
+    var pageConfig = {
+    baseLayer: {
+      id: 'moabi_base',
+      latlon: [-2.877, 22.83],
+      zoom: 6
+  }
+};
+
+  var baseLayer = L.tileLayer('http://tiles.osm.moabi.org/'+ pageConfig.baseLayer.id +'/{z}/{x}/{y}.png');
+  
+   var map = L.map('map', {
+        layers: baseLayer,
+        center: pageConfig.baseLayer.latlon,
+        zoom: pageConfig.baseLayer.zoom,
+        scrollWheelZoom: false,
+        minZoom: 4,
+        maxZoom: 18
+      });
+
+   
+
+      map.zoomControl.setPosition('topleft');
+      L.control.scale().addTo(map);
   </script>
   </body>
 </html>
