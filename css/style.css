@@ -372,6 +372,12 @@ th {
 .content .map {
 	margin: 40px 0;
 }
+.content #map {
+        width:100%;
+        height:430px;
+        z-index: -3;
+}
+
 
 .content .row {
 	

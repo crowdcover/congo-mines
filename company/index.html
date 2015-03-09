@@ -1,7 +1,33 @@
 ---
 layout: main
 ---
+<script type="text/javascript">
+  jQuery( document ).ready(function() {
+  var pageConfig = {
+    baseLayer: {
+      id: 'moabi_base',
+      latlon: [-2.877, 22.83],
+      zoom: 6
+  }
+};
 
+  var baseLayer = L.tileLayer('http://tiles.osm.moabi.org/'+ pageConfig.baseLayer.id +'/{z}/{x}/{y}.png');
+  
+   var map = L.map('map', {
+        layers: baseLayer,
+        center: pageConfig.baseLayer.latlon,
+        zoom: pageConfig.baseLayer.zoom,
+        scrollWheelZoom: false,
+        minZoom: 4,
+        maxZoom: 18
+      });
+
+   
+
+      map.zoomControl.setPosition('topleft');
+      L.control.scale().addTo(map);
+  });
+</script>
 <div class="content">
 
   <div class="row">
@@ -9,7 +35,7 @@ layout: main
       <p>Fusce ante lectus, pulvinar sed lacus scelerisque, bibendum commodo mauris. Vivamus erat velit, sodales et blandit vel, viverra id dolor. Pellentesque efficitur euismod nunc, quis condimentum</p>
     </div>
   </div>
-  <img src="{{site.baseurl}}/img/map.jpg" class="map" />
+  <div id="map" class="map" />
   <div class="row">
     <div class="large-12 columns">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam enim, consequat vel condimentum id, tempor dapibus erat. In vel volutpat erat. Integer consectetur orci pharetra urna aliquet, ac commodo sapien posuere. Donec luctus nibh suscipit ipsum condimentum, quis feugiat tellus ultrices. Ut tempor ac quam non congue. Nulla vel turpis lorem. Duis et dolor id sapien eleifend tincidunt sit amet in sem.</p>
