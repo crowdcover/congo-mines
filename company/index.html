@@ -87,9 +87,10 @@ function initMap() {
 
     //For Each feature in the GeoJSON define popups, any action etc action
     function onEachFeature(feature, layer) {
-        var popupContent = "<h3>"+ feature.properties.name + "</h3>"+
+        var popupContent = "<h3 class='mine-marker'>"+ feature.properties.name + "</h3>"+
             "Operator: "+feature.properties.operator + "<br />"+
-            "Size: " + feature.properties.size ;
+            "Size: " + feature.properties.size + "<br />"+
+            "Score: "+ feature.properties.score ;
 
         layer.bindPopup(popupContent);
     }

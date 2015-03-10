@@ -657,3 +657,8 @@ background-image: url('../img/arrow_down.png');
 .sidebar_button:hover {
             cursor: pointer;
         }
+/* Map and Data Rules */
+
+h3.map-marker {
+        background-color:  rgb(96, 175, 222);
+}
