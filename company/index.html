@@ -1,7 +1,109 @@
 ---
 layout: main
 ---
+<script type="text/javascript">
+function initMap() {
+    var pageConfig = {
+        baseLayer: {
+            id: 'moabi_base',
+            latlon: [-2.877, 22.83],
+            zoom: 6
+        }
+    };
 
+    var baseLayer = L.tileLayer('http://tiles.osm.moabi.org/' + pageConfig.baseLayer.id + '/{z}/{x}/{y}.png');
+
+    var map = L.map('map', {
+        layers: baseLayer,
+        center: pageConfig.baseLayer.latlon,
+        zoom: pageConfig.baseLayer.zoom,
+        scrollWheelZoom: false,
+        minZoom: 4,
+        maxZoom: 18
+    });
+
+    map.zoomControl.setPosition('topleft');
+    L.control.scale().addTo(map);
+
+    //TODO
+
+    //geojson for features
+
+    //Icon definition for a mine 
+
+    var mineIcon = L.icon({
+        iconUrl: '{{site.baseurl}}/img/mine.30.png',
+        iconSize: [30, 30],
+        popupAnchor: [0, -30]
+    });
+
+
+    //http://geojson.io/#id=gist:anonymous/153f973bac4ddaac38ae&map=7/-4.500/17.457
+    var minesJSON = {
+        "type": "FeatureCollection",
+        "features": [{
+            "type": "Feature",
+            "properties": {
+                "name": "Kikwit Mine",
+                "operator": "Kikwit Mining",
+                "size" : 200,
+                "score": 10
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.885498046875, -5.036226914872183
+                ]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "operator": "Lusanga Mining",
+                "name": "Chippy Mine",
+                "size": 30,
+                "score": 25
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.347412109375, -3.535352145400865
+                ]
+            }
+        }]
+    }
+
+    var minesLayer = L.geoJson(null, {
+        pointToLayer: function(feature, latlng) {
+            return L.marker(latlng, {
+                icon: mineIcon
+            });
+        },
+
+        onEachFeature: onEachFeature
+    }).addTo(map);
+
+    minesLayer.addData(minesJSON);
+
+
+    //For Each feature in the GeoJSON define popups, any action etc action
+    function onEachFeature(feature, layer) {
+        var popupContent = "<h3>"+ feature.properties.name + "</h3>"+
+            "Operator: "+feature.properties.operator + "<br />"+
+            "Size: " + feature.properties.size ;
+
+        layer.bindPopup(popupContent);
+    }
+
+    //Tie to data table below
+}
+
+//lets use Jquery DataTables
+//in rails jquery-datatables-rails
+function setUpTable(){
+  
+  }
+
+</script>
 <div class="content">
 
   <div class="row">
