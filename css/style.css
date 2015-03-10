@@ -67,7 +67,7 @@ tr {
 }
 
 th {
-	background: #60afde;
+	background: #60afde!important;
 	color: #fff!important;
 	font-weight: 200;
 
@@ -662,3 +662,19 @@ background-image: url('../img/arrow_down.png');
 h3.map-marker {
         background-color:  rgb(96, 175, 222);
 }
+table.mine-table thead th {
+        background: #60afde!important;
+}
+
+table.mine-table thead th.sorting_asc {
+    background: #66A9BD url('../img/sort_asc.white.png') no-repeat right center !important;
+}
+ 
+table.mine-table thead th.sorting_desc {
+    background: #66A9BD url('../img/sort_desc.white.png') no-repeat right center !important;
+}
+ 
+table.mine-table thead th.sorting {
+    background: #66A9BD url('../img/sort_both.png') no-repeat right center !important;
+}
+

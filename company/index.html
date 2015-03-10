@@ -96,13 +96,16 @@ function initMap() {
     }
 
     //Tie to data table below
+    setUpTable();
 }
 
 //lets use Jquery DataTables
 //in rails jquery-datatables-rails
 function setUpTable(){
-  
-  }
+  $('.mine-table').DataTable(
+    {"paging":   false, "info": false, "searching":false}
+  )
+}
 
 </script>
 <div class="content">
@@ -116,6 +119,26 @@ function setUpTable(){
   <div class="row">
     <div class="large-12 columns">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam enim, consequat vel condimentum id, tempor dapibus erat. In vel volutpat erat. Integer consectetur orci pharetra urna aliquet, ac commodo sapien posuere. Donec luctus nibh suscipit ipsum condimentum, quis feugiat tellus ultrices. Ut tempor ac quam non congue. Nulla vel turpis lorem. Duis et dolor id sapien eleifend tincidunt sit amet in sem.</p>
+      
+      <table class="mine-table">
+      <thead>
+        <tr>
+          <th>Name</th><th>Operator</th><th>Size</th><th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>d</td><td>c</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td>
+        </tr>
+        </tbody>
+      </table>
+      
       <table>
         <tr>
           <th>Item</th><th>Item</th><th>Item</th><th>Item</th><th>Item</th><th>Item</th><th>Item</th><th>Item</th>
