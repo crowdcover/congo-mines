@@ -96,14 +96,29 @@ function initMap() {
     }
 
     //Tie to data table below
-    setUpTable();
+    setUpTable(minesJSON);
 }
 
 //lets use Jquery DataTables
 //in rails jquery-datatables-rails
-function setUpTable(){
-  $('.mine-table').DataTable(
-    {"paging":   false, "info": false, "searching":false}
+function setUpTable(geoJSON){
+  
+  var table_data = [];
+  var feature_array = $.makeArray( geoJSON.features )
+  table_data = $.map(feature_array, function(d){ return d.properties;});
+
+  $('.mine-table').DataTable({
+      "paging":   false, 
+      "info": false, 
+      "searching":false,
+      "columns": [
+            { "data": "name" },
+            { "data": "operator" },
+            { "data": "size" },
+            { "data": "score" }
+        ],
+      "data": table_data
+      }
   )
 }
 
@@ -128,37 +143,11 @@ function setUpTable(){
         </thead>
         <tbody>
         <tr>
-          <td>d</td><td>c</td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
           <td></td><td></td><td></td><td></td>
         </tr>
         </tbody>
       </table>
       
-      <table>
-        <tr>
-          <th>Item</th><th>Item</th><th>Item</th><th>Item</th><th>Item</th><th>Item</th><th>Item</th><th>Item</th>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-      </table>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam enim, consequat vel condimentum id, tempor dapibus erat. In vel volutpat erat. Integer consectetur orci pharetra urna aliquet, ac commodo sapien posuere. Donec luctus nibh suscipit ipsum condimentum, quis feugiat tellus ultrices. Ut tempor ac quam non congue. Nulla vel turpis lorem. Duis et dolor id sapien eleifend tincidunt sit amet in sem.</p>
 
 
