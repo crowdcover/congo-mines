@@ -9,7 +9,7 @@
 
       <div class="menu">
         <div class="row">
-          <div class="logo"><a href="index.html"><img src="{{site.baseurl}}/img/logo.png" /></a></div>
+          <div class="logo"><a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/img/logo.png" /></a></div>
           <div class="navigation">
             <ul>
               <li><a href="{{site.baseurl}}/">Home</a></li>
@@ -23,28 +23,10 @@
 
   </div>
 
-  </div>
-
   <!-- insert page-specific content to main.html layout -->
   {{content}}
 
-  <div class="footer">
-    <div class="row">
-      <div class="large-6 columns text-center">
-       <img src="{{site.baseurl}}/img/belguim.png" />
-      </div>
-      <div class="large-6 columns">
-        <ul>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Site Map</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-  <div class="copyright"></div>
-
+  {% include footer.html %}
 
   <script src="{{site.baseurl}}/js/vendor/jquery.js"></script>
   <script src="{{site.baseurl}}/js/scripts.js"></script>
