@@ -306,22 +306,26 @@ th {
 
 .footer h4 {
 	color: #c2c2c2;
+	text-align: left;
 }
 
 .copyright ul {
 	list-style-type: none;
 	padding-top: 10px;
 	padding-left: 50px;
+	text-align: right;
+	margin: 0;
 }
 
 .copyright p {
 	color: #767676;
 	padding-top: 10px;
+	text-align: left;
 }
 
 .copyright ul li {
 	display: inline-block;
-	margin-left: 35px;
+	margin-right: 35px;
 }
 
 .copyright ul li a {
@@ -473,6 +477,10 @@ th {
 	color: #288cb5;
 }
 
+.search h3 {
+	margin: 20px 0;
+}
+
 .search h4 {
 	color: #4f575b;
 	font-size: 0.9em;
@@ -480,21 +488,14 @@ th {
 
 .search input {
 	border: 2px solid #fff;
-	background-image: url('../img/search.png');
-    background-position: 450px 18px;
-    background-repeat: no-repeat;
 	padding: 30px 25px;
 	font-family: 'Open Sans', sans-serif;	
 	font-weight: 200;
-	width: 500px;
-	margin: auto;
 	box-shadow: none;
 }
 
 .search input:focus {
 	background: #fff;
-	border: 2px solid #288cb5;
-	background-image: url('../img/search.png');
     background-position: 450px 18px;
     background-repeat: no-repeat;
     transition: border 0.2s ease-in-out;
@@ -502,6 +503,62 @@ th {
 
 .search input:after {
 	background: url('../img/search.png');
+}
+
+#advanced {
+	display: none;
+}
+
+.searchicon {
+	background-image: url('../img/search.png');
+    background-position: 420px 18px;
+    background-repeat: no-repeat;
+}
+input[type=checkbox] {
+	padding: 0px 5px!important;
+    border-radius:2px;
+    border: 7px solid #fff;
+    -webkit-appearance:button;
+    background-color:#ffffff;
+    color:#FFF;
+    white-space: nowrap;
+    overflow:hidden;
+    margin: -5px 20px;
+    width:25px;
+    height:25px;
+    outline: 0;
+}
+
+label { 
+	color: #aaaaaa; 
+	font-size: 16px; 
+	font-weight: 200; 
+	padding-right: 20px; 
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+label:checked {
+	color: #31acde;
+}
+
+input[type=checkbox]:checked {
+    background-color:#31acde;
+	border: 7px solid #fff;
+	transition: all ease-in-out 0.1s;
+}
+
+input[type=checkbox]:focus {
+	background: #31acde;
+	border: 7px solid #fff;
+	transition: all ease-in-out 0.1s;
+}
+
+input[type=checkbox]:hover {
+	background: #bababa;
+	border: 7px solid #fff;
+	transition: all ease-in-out 0.1s;
+
 }
 
 .grey input {
@@ -666,3 +723,52 @@ background-image: url('../img/arrow_down.png');
 .sidebar_button:hover {
             cursor: pointer;
         }
+
+
+@media all and (max-width: 1080px) {
+
+	.footer {
+		height: 750px;
+	}
+
+	.footer h4 {
+		text-align: center;
+	}
+
+	.banner {
+		text-align: center;
+		height: 220px;
+	}
+
+	.banner h2 {
+		margin-bottom: 20px;
+	}
+
+	.copyright {
+		height: 200px;
+		text-align: center;
+	}
+
+	.copyright ul, .copyright p {
+		text-align: center;
+	}
+	
+}
+
+@media all and (max-width: 640px) {
+
+
+
+	.banner {
+		height: 260px;
+	}
+
+	.content .category {
+  		width: 100%;
+  		height: 250px;
+  	}
+
+  	.header .logo img {
+  		max-width: 120px;
+ 	}
+}
