@@ -2,7 +2,7 @@
 
 
 ::selection {
-	color: #FFF; 
+	color: #FFF;
 	background-color: rgba(50, 172, 222, 0.9) !important;
 }
 
@@ -13,7 +13,7 @@
 
 
 html {
-	
+
 }
 
 body {
@@ -41,9 +41,11 @@ h4 {
 	font-size: 1.3em;
 }
 
+a.active { color: #60afde !important; }
+
 p {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 200;	
+	font-weight: 200;
 	line-height: 2em;
 }
 
@@ -79,8 +81,8 @@ th {
 }
 
 
-.divborder { 
-	border-right: 1px solid #eee 
+.divborder {
+	border-right: 1px solid #eee
 }
 
 .maptop {
@@ -163,12 +165,12 @@ th {
 
 }
 
-.mapmenu li ul li { 
+.mapmenu li ul li {
   	background: #ececec;
   	width: 180px;
-  	padding: 15px 25px; 
+  	padding: 15px 25px;
   	text-align: left;
-  	display: block; 
+  	display: block;
   	color: #999999;
   	border-bottom: 1px solid #d3d3d3;
 }
@@ -212,7 +214,7 @@ th {
 	font-weight: 200;
 	line-height: 1.7em;
 	font-size: 1.7em;
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	margin: auto;
 	max-width: 640px;
 	padding-top: 100px;
@@ -224,7 +226,7 @@ th {
 	font-weight: 200;
 	line-height: 1.7em;
 	font-size: 1.2em;
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	margin: auto;
 	max-width: 640px;
 		padding-top: 100px;
@@ -275,9 +277,9 @@ th {
 	padding-top: 30px;
 }
 
-.past-main { 
+.past-main {
 	background-color: rgba(50, 53, 56, 0.95);
-	color:#444; 
+	color:#444;
 	transition: background ease-in-out 0.2s;
 	position: fixed;
 	top: 0;
@@ -354,7 +356,7 @@ th {
 
 .content h1 {
 	text-align: center;
-	color: #32acde;	
+	color: #32acde;
 
 }
 
@@ -377,7 +379,7 @@ th {
 }
 
 .content h2, .content h3 {
-	color: #32acde;	
+	color: #32acde;
 	margin-top: 0px;
 }
 
@@ -393,7 +395,7 @@ th {
 }
 
 .content .row {
-	
+
 }
 
 .content .featured {
@@ -489,7 +491,7 @@ th {
 .search input {
 	border: 2px solid #fff;
 	padding: 30px 25px;
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	box-shadow: none;
 }
@@ -529,11 +531,11 @@ input[type=checkbox] {
     outline: 0;
 }
 
-label { 
-	color: #aaaaaa; 
-	font-size: 16px; 
-	font-weight: 200; 
-	padding-right: 20px; 
+label {
+	color: #aaaaaa;
+	font-size: 16px;
+	font-weight: 200;
+	padding-right: 20px;
 	display: inline-block;
 	margin-bottom: 20px;
 }
@@ -566,7 +568,7 @@ input[type=checkbox]:hover {
 	Background: #fff;
 	padding: 30px 25px;
 	margin: 10px 0;
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	box-shadow: none;
 }
@@ -593,7 +595,7 @@ input[type=checkbox]:hover {
 
 .banner h2 {
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 }
 
@@ -605,7 +607,7 @@ input[type=checkbox]:hover {
 }
 
 .accordion h4 {
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1.1em;
 	color: #c0c0c0;
@@ -617,7 +619,7 @@ input[type=checkbox]:hover {
 	font-weight: 200!important;
 }
 .accordion label{
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	padding: 5px 0px;
 	position: relative;
@@ -653,8 +655,8 @@ input[type=checkbox]:hover {
 	width: 35px;
 	height: 35px;
 	right: 0px;
-	top: 22px;	
-	background: transparent url('../img/arrow_right.png') no-repeat center center;	
+	top: 22px;
+	background: transparent url('../img/arrow_right.png') no-repeat center center;
 }
 .accordion input:checked + label:hover:after{
 background-image: url('../img/arrow_down.png');
@@ -675,7 +677,7 @@ background-image: url('../img/arrow_down.png');
 	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 }
 .accordion article p{
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	color: #777;
 	line-height: 23px;
@@ -752,7 +754,7 @@ background-image: url('../img/arrow_down.png');
 	.copyright ul, .copyright p {
 		text-align: center;
 	}
-	
+
 }
 
 @media all and (max-width: 640px) {
