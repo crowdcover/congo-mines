@@ -18,6 +18,8 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	line-height: 2em;
 }
 
 h1, h2, h3, h4 {
@@ -39,6 +41,10 @@ h3 {
 
 h4 {
 	font-size: 1.3em;
+}
+
+h5, h6 {
+	color: #a4a4a4;
 }
 
 a.active { color: #60afde !important; }
@@ -73,6 +79,14 @@ th {
 	color: #fff!important;
 	font-weight: 200;
 
+}
+
+blockquote {
+	line-height: 2em;
+}
+
+strong, b {
+  font-weight: 400
 }
 
 
@@ -520,14 +534,13 @@ input[type=checkbox] {
 	padding: 0px 5px!important;
     border-radius:2px;
     border: 7px solid #fff;
-    -webkit-appearance:button;
     background-color:#ffffff;
     color:#FFF;
     white-space: nowrap;
     overflow:hidden;
     margin: -5px 20px;
     width:25px;
-    height:25px;
+    height:16px;
     outline: 0;
 }
 
