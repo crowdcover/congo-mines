@@ -1,23 +1,29 @@
 ---
 ---
-$(document).ready(function(){
-  var mainbottom = $('.menu').offset().top;
+(function(){
+  var app = {
+    initCommon: function(){
+      mainbottom = $('.menu').offset().top;
 
-  $(window).on('scroll',function(){
+      $(window).on('scroll', this.showStickyHeader);
 
+      $("#hideshow").click(function(){
+        $("#advanced").slideToggle(500);
+      });
+    },
+
+    showStickyHeader: function(){
       stop = Math.round($(window).scrollTop());
       if (stop > mainbottom) {
           $('.menu').addClass('past-main');
       } else {
           $('.menu').removeClass('past-main');
       }
-  });
+    }
 
-  $("#hideshow").click(function(){
-    $("#advanced").slideToggle(500);
-  });
+  };
 
-  var app = {
+  $.extend(app,{
     initMap: function() {
         // short circuit if map div is not set up on page
         if(! $('#map').length ){
@@ -101,9 +107,10 @@ $(document).ready(function(){
           "data": table_data
           }
       )
-    },
-  };
+    }
 
-  app.initMap();
+  });
+
   window.app = app;
-});
+
+})();

@@ -27,11 +27,14 @@
   <script src="{{site.baseurl}}/js/vendor/jquery.dataTables.min.js"></script>
   <script src="{{site.baseurl}}/js/vendor/dataTables.foundation.js"></script>
    <!-- TODO, vendorise -->
-  <script src="{{site.baseurl}}/js/scripts.js"></script>
+  <script src="{{site.baseurl}}/js/common.js"></script>
+  <script src="{{site.baseurl}}/js/map.js"></script>
   <script src="{{site.baseurl}}/js/foundation.min.js"></script>
   <script src="{{site.baseurl}}/js/slidx.js"></script>
   <script>
     $(document).foundation();
+    app.initCommon();
+    app.initMap();
   </script>
   </body>
 </html>
