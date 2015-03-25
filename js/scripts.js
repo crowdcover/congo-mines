@@ -1,3 +1,5 @@
+---
+---
 $(document).ready(function(){
   var mainbottom = $('.menu').offset().top;
 
@@ -54,7 +56,7 @@ $(document).ready(function(){
 
         var minesLayer;
 
-        $.getJSON("mines.json", function(data) {
+        $.getJSON("{{site.baseurl}}/data/mines.json", function(data) {
             minesLayer = L.geoJson(data, {
               onEachFeature: onEachFeature
             });
