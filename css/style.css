@@ -571,7 +571,7 @@ input[type=checkbox] {
     color:#FFF;
     white-space: nowrap;
     overflow:hidden;
-    margin: -5px 20px;
+    margin: -5px 4px;
     width:25px;
     height:16px;
     outline: 0;
