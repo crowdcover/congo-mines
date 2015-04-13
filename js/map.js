@@ -32,13 +32,13 @@
 
         var pageConfig = {
             baseLayer: {
-                id: 'moabi_base',
+                id: 'james-lane-conkling.5630f970',
                 latlon: [-2.877, 22.83],
                 zoom: 5
             }
         };
 
-        var baseLayer = L.tileLayer('http://tiles.osm.moabi.org/' + pageConfig.baseLayer.id + '/{z}/{x}/{y}.png');
+        var baseLayer = L.tileLayer('http://api.tiles.mapbox.com/v4/' + pageConfig.baseLayer.id + '/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg');
 
         var map = L.map('map', {
             layers: baseLayer,
