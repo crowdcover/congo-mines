@@ -89,11 +89,21 @@ strong, b {
   font-weight: 400
 }
 
+.keyline-all { border: 1px solid #ccc; }
+.keyline-left { border-left: 1px solid #ccc; }
+.keyline-right { border-right: 1px solid #ccc; }
+.keyline-top { border-top: 1px solid #ccc; }
+.keyline-bottom { border-bottom: 1px solid #ccc; }
+
 
 .divider {
 	padding: 10px 0;
 }
 
+.inline-list > li {
+  margin-left: 0;
+  margin-right: 1.275rem;
+}
 
 .divborder {
 	border-right: 1px solid #eee
