@@ -855,3 +855,8 @@ table.mine-table thead th.sorting {
     background: #66A9BD url('../img/sort_both.png') no-repeat right center !important;
 }
 
+.fb_iframe_widget span {
+	vertical-align: top!important;
+	margin-top: 2px;
+}
+
