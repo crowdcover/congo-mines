@@ -57,11 +57,16 @@ p {
 
 button {
 	background: #32acde;
-	font-family: 'Open Sans', sans-serif;
+	background-color:#32acde!important;
+	font-family: 'Open Sans', sans-serif!important;
 	padding: 20px 30px;
-	font-size: 1em;
-	font-weight: 200;
+	font-size: 1em!important;
+	font-weight: 200!important;
 	outline: 0;
+}
+
+button:hover, button:focus {
+	background-color: #308cb1!important;
 }
 
 table {
@@ -559,6 +564,10 @@ strong, b {
 .content .category h3 {
 	color: #fff;
 	font-size: 1em;
+}
+
+.f-dropdown {
+	max-width: 300px;
 }
 
 .search, .grey {

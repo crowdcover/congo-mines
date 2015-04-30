@@ -20,84 +20,62 @@
   </div>
   <div class="divider"></div>
   <div id="advanced">
-    <div class="row">
-      <div class="large-12 columns">
-        <h3>Thème</h3>
-            <form action="">
-                  <label><input type="checkbox" name="themes" value="resources">Aspects Financiers et Fiscaux</label>
-                  <label><input type="checkbox" name="themes" value="environment">Aspects Sociaux et Environnementaux</label>
-                  <label><input type="checkbox" name="themes" value="budget">Contrats et Titres Miniers</label>
-                  <label><input type="checkbox" name="themes" value="miningops">Introduction au Secteur Minier</label>
-                  <label><input type="checkbox" name="themes" value="miningops">Gouvernance, Transparence et Réformes du Secteur</label>
-                  <label><input type="checkbox" name="themes" value="miningops">Opérations Minières</label>
-            </form>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <h3>Type de Document</h3>
-            <form action="">
-                  <label><input type="checkbox" name="types" value="press">Articles de Presse</label>
-                  <label><input type="checkbox" name="types" value="projectdocs">Cartes</label>
-                  <label><input type="checkbox" name="types" value="reports">Communiqués et Lettres</label>
-                  <label><input type="checkbox" name="types" value="lawstandards">Contrats</label>
-                  <label><input type="checkbox" name="types" value="presentation">Documents d’Entreprises et Publications Boursières</label>
-                  <label><input type="checkbox" name="types" value="presentation">Guides et Manuels</label>
-                  <label><input type="checkbox" name="types" value="presentation">Listes, Tableaux et Statistiques</label>
-                  <label><input type="checkbox" name="types" value="presentation">Lois, Normes et Réglements</label>
-                  <label><input type="checkbox" name="types" value="presentation">Rapports et Analyses</label>
-                  <label><input type="checkbox" name="types" value="presentation">Site Internet</label>
-                  <label><input type="checkbox" name="types" value="presentation">Statuts et Actes de Constitution</label>
-                  <label><input type="checkbox" name="types" value="presentation">Synthèses et Résumés</label>
-            </form>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <h3>Type de Source</h3>
-            <form action="">
-                  <label><input type="checkbox" name="source" value="companies">Cabinets Juridiques, Techniques et d’Audit</label>
-                  <label><input type="checkbox" name="source" value="committees">Entreprises Minières</label>
-                  <label><input type="checkbox" name="source" value="civilsociety">Etat Congolais (autorité centrale)</label>
-                  <label><input type="checkbox" name="source" value="government">Etat congolais (autorités provinciales)</label>
-                  <label><input type="checkbox" name="source" value="committees">Etats Étrangers</label>
-                  <label><input type="checkbox" name="source" value="committees">Groupes Multi-Partites</label>
-                  <label><input type="checkbox" name="source" value="committees">Institutions Internationales</label>
-                  <label><input type="checkbox" name="source" value="committees">Instituts et Chercheurs Académiques</label>
-                  <label><input type="checkbox" name="source" value="committees">Presse</label>
-                  <label><input type="checkbox" name="source" value="committees">Société Civile Internationale</label>
-                  <label><input type="checkbox" name="source" value="committees">Société Civile Locale</label>
 
-            </form>
-      </div>
-    </div>
     <div class="row">
       <div class="large-12 columns">
-        <h3>Province</h3>
-            <form action="">
-                  <label><input type="checkbox" name="source" value="companies">Katanga</label>
-                  <label><input type="checkbox" name="source" value="committees">Province Orientale</label>
-                  <label><input type="checkbox" name="source" value="civilsociety">Provinces du Kasai</label>
-                  <label><input type="checkbox" name="source" value="government">Provinces du Kivu</label>
-
-            </form>
+      <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Thème</button>
+        <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a href="#">Aspects Financiers et Fiscaux</a></li>
+          <li><a href="#">Aspects Sociaux et Environnementaux</a></li>
+          <li><a href="#">Contrats et Titres Miniers</a></li>
+          <li><a href="#">Introduction au Secteur Minier</a></li>
+          <li><a href="#">Gouvernance, Transparence et Réformes du Secteur</a></li>
+          <li><a href="#">Opérations Minières</a></li>
+        </ul>
+      <button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="button dropdown">Type de Document</button>
+        <ul id="drop2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a href="#">Articles de Presse</a></li>
+          <li><a href="#">Cartes</a></li>
+          <li><a href="#">Contrats</a></li>
+          <li><a href="#">Documents d’Entreprises et Publications Boursières</a></li>
+          <li><a href="#">Guides et Manuels</a></li>
+          <li><a href="#">Listes, Tableaux et Statistiques</a></li>
+          <li><a href="#">Lois, Normes et Réglements</a></li>
+          <li><a href="#">Rapports et Analyses</a></li>
+          <li><a href="#">Site Internet</a></li>
+          <li><a href="#">Statuts et Actes de Constitution</a></li>
+          <li><a href="#">Synthèses et Résumés</a></li>
+        </ul>
+      <button href="#" data-dropdown="drop3" aria-controls="drop3" aria-expanded="false" class="button dropdown">Type de Source</button>
+        <ul id="drop3" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a href="#">Cabinets Juridiques, Techniques et d’Audit</a></li>
+          <li><a href="#">Entreprises Minières</a></li>
+          <li><a href="#">Etat Congolais (autorité centrale)</a></li>
+          <li><a href="#">Etat congolais (autorités provinciales)</a></li>
+          <li><a href="#">Etats Étrangers</a></li>
+          <li><a href="#">Institutions Internationales</a></li>
+          <li><a href="#">Instituts et Chercheurs Académiques</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Société Civile Internationale</a></li>
+          <li><a href="#">Société Civile Locale</a></li>
+        </ul>
+      <button href="#" data-dropdown="drop4" aria-controls="drop4" aria-expanded="false" class="button dropdown">Province</button>
+        <ul id="drop4" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a href="#">Katanga</a></li>
+          <li><a href="#">Province Orientale</a></li>
+          <li><a href="#">Provinces du Kasai</a></li>
+          <li><a href="#">Provinces du Kivu</a></li>
+        </ul>
+      <button href="#" data-dropdown="drop5" aria-controls="drop5" aria-expanded="false" class="button dropdown">DRC Company</button>
+        <ul id="drop5" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a href="#">Placeholder</a></li>
+        </ul>
+         <button href="#" data-dropdown="drop6" aria-controls="drop6" aria-expanded="false" class="button dropdown">Shareholder Company</button>
+        <ul id="drop6" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a href="#">Placeholder</a></li>
+        </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="large-6 columns">
-        <h3>DRC Company</h3>
-          <input type="text" placeholder="" />
-      </div>
-      <div class="large-6 columns">
-        <h3>Shareholder Company</h3>
-          <input type="text" placeholder="" class="searchicon"/>
-      </div>
-    </div>
-    <div class="divider"></div>
-    <div class="row">
-      <div class="large-12 columns">
-          <button>Submit</button>
-      </div>
-    </div>
+   
   </div>
 </div>
